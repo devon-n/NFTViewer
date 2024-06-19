@@ -10,7 +10,7 @@ const Card = ({ nft }) => {
         <div className="border p-4 rounded shadow-lg bg-gradient-to-r from-purple-800 via-pink-500 to-red-500 transform hover:scale-105 transition-transform duration-300">
             <div className="relative">
                 {cachedUrl ? (
-                    <Image src={cachedUrl} alt={name} width={300} height={300} className="rounded-lg shadow-neon" />
+                    <Image src={cachedUrl} alt={name} width={300} height={300} className="rounded-lg shadow-neon" layout="responsive" />
                 ) : (
                     <div className="w-[300px] h-[300px] bg-gray-800 flex items-center justify-center rounded-lg shadow-neon">
                         <span className="text-gray-400">No Image Available</span>

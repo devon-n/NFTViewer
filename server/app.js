@@ -13,8 +13,6 @@ const port = 3000
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
-// TODO 0x29469395eAf6f95920E59F858042f0e28D98a20B | 340 NFTs
-// 0xcce98763ff5a9Ff5bAF8b15aBC456077a1e84f2A | 1 NFT
 
 app.get('/pudgyPenguins', async (req, res) => {
     const walletAddress = req.query.walletAddress
