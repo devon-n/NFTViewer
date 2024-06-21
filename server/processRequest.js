@@ -35,6 +35,7 @@ async function alchemyRequest(tokenIds) {
 
         // Batch ids by 100
         const batchSize = 100;
+
         // Create tokens array of objects for request
         const tokens = tokenIds.map(tokenId => ({
             contractAddress: process.env.PUDGY_PENGUINS_ADDRESS,

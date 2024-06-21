@@ -24,7 +24,7 @@ app.get('/pudgyPenguins', async (req, res) => {
     } else {
 
         const response = await processRequest(req.query.walletAddress)
-        res.send(JSON.stringify(response))
+        res.status(200).json(response)
 
     }
 })
